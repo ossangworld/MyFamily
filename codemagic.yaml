@@ -1,6 +1,6 @@
 workflows:
-  android-build:
-    workflow-name: Android Build Workflow # 워크플로우 이름 (원하는 이름으로 변경 가능)
+  workflow-name:
+    name: Android Build Workflow # 워크플로우 이름 (원하는 이름으로 변경 가능)
     environment:
       flutter: stable
       xcode: 15.2
