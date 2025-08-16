@@ -1,6 +1,6 @@
 workflows:
   android-build:
-    name: Android Build Workflow # 워크플로우 이름 (원하는 이름으로 변경 가능)
+    workflow-name: Android Build Workflow # 워크플로우 이름 (원하는 이름으로 변경 가능)
     environment:
       flutter: stable
       xcode: 15.2
@@ -16,4 +16,4 @@ workflows:
     publishing:
       email:
         recipients:
-          - your-email@example.com
+          - ossangworld@gmail.com
