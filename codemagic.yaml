@@ -1,5 +1,19 @@
 workflows:
-  workflow-name:
+  android-build:
+    name: Android Build Workflow # 워크플로우 이름 (원하는 이름으로 변경 가능)
     environment:
-      groups:
-        - group-name
+      flutter: stable
+      xcode: 15.2
+      cocoapods: default
+    scripts:
+      - |
+        # flutter pub get 및 안드로이드 빌드
+        set -e
+        flutter pub get
+        flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - your-email@example.com
