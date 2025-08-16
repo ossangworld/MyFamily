@@ -7,7 +7,6 @@ workflows:
       cocoapods: default
     scripts:
       - |
-        # flutter pub get 및 안드로이드 빌드
         set -e
         flutter pub get
         flutter build apk --release
